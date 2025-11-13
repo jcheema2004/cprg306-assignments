@@ -15,12 +15,6 @@ export default function NewItem({onAddItem}){
         console.log({name, quantity, category});
         //reset form
 
-        // let item = {
-        //     name: name,
-        //     quantity: quantity,
-        //     category: category
-        // }
-
         const newItem = {
             id : (typeof crypto !=="undefined" && crypto.randomUUID) ? crypto.randomUUID() : Math.random().toString(36).substring(2,9),
             name: name.trim(),
